@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="./assets/favicon.ico" type="image/x-icon" >
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>audio-player</title>
+</head>
+<body>
+	<div class="page">
+		<div class="conteiner__page">
+			<div class="wrapper__img">
+			</div>
+			<audio src="./assets/audio/beyonce.mp3" class="wrapper__player" ontimeupdate="updatePlayerTime(this)"></audio>
+			<div class="player__wrapper">
+				<div class="player__switcher">
+					<div class="switcher__play">
+						<img class="switcher__play-item" src="./assets/svg/play.png" alt="play">
+					</div>
+					<div class="composition">
+						<div class="composition__title">
+							Beyonce
+						</div>
+						<div class="composition__subtitle">
+							Don't Hurt Yourself
+						</div>
+					</div>
+					<div class="switcher__track">
+						<div class="track__prev">
+							<img src="./assets/svg/backward.png" alt="prev track">
+						</div>
+						<div class="track__next">
+							<img src="./assets/svg/forward.png" alt="next track">
+						</div>
+					</div>
+				</div>
+				<div class="player">
+					<div class="time__current">
+					03:53
+					</div>
+					<input class="player__line" type="range" min="0"  value="0">
+					<div class="time__duration">
+					00:00
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+				<div class="link">
+					<a href="https://github.com/AWSERs">GitHub</a>
+				</div>
+				<div class="link">2022</div>
+				<div class="link">
+					<a href="https://rs.school/js-stage0/">RoulingScope</a>
+				</div>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+</html>
